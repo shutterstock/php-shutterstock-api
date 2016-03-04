@@ -1,0 +1,5 @@
+/build
+/vendor
+codeclimate.json
+composer.phar
+coverage.xml
