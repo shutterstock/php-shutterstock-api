@@ -12,7 +12,7 @@ PHP client that utilizes Guzzle to interact with the [Shutterstock API](https://
 Use [Composer](https://getcomposer.org/) to install the dependencies.
 
 ```bash
-$ composer require shutterstock/php-shutterstock-api
+$ composer require shutterstock/api
 ```
 
 ## Usage
