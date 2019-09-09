@@ -7,7 +7,6 @@
         "psr/log": "^1.0"
     },
     "require-dev": {
-        "codeclimate/php-test-reporter": "dev-master",
         "phpunit/phpunit": "^5.0"
     },
     "autoload": {
