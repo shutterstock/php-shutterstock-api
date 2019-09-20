@@ -2,10 +2,10 @@
 
 PHP client that utilizes Guzzle to interact with the [Shutterstock API](https://developers.shutterstock.com/).
 
-[![Build Status](https://travis-ci.org/jacobemerick/php-shutterstock-api.svg)](https://travis-ci.org/jacobemerick/php-shutterstock-api)
-[![Code Climate](https://codeclimate.com/github/jacobemerick/php-shutterstock-api/badges/gpa.svg)](https://codeclimate.com/github/jacobemerick/php-shutterstock-api)
-[![Test Coverage](https://codeclimate.com/github/jacobemerick/php-shutterstock-api/badges/coverage.svg)](https://codeclimate.com/github/jacobemerick/php-shutterstock-api/coverage)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jacobemerick/php-shutterstock-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jacobemerick/php-shutterstock-api/?branch=master)
+[![Build Status](https://travis-ci.org/shutterstock/php-shutterstock-api.svg)](https://travis-ci.org/shutterstock/php-shutterstock-api)
+[![Code Climate](https://codeclimate.com/github/shutterstock/php-shutterstock-api/badges/gpa.svg)](https://codeclimate.com/github/shutterstock/php-shutterstock-api)
+[![Test Coverage](https://codeclimate.com/github/shutterstock/php-shutterstock-api/badges/coverage.svg)](https://codeclimate.com/github/shutterstock/php-shutterstock-api/coverage)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/shutterstock/php-shutterstock-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/shutterstock/php-shutterstock-api/?branch=master)
 
 ## Installation
 
