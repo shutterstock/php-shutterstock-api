@@ -3,9 +3,9 @@
 namespace Shutterstock\Api;
 
 use GuzzleHttp\Psr7\Stream;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class JsonStreamTest extends PHPUnit_Framework_TestCase
+class JsonStreamTest extends TestCase
 {
 
     public function testIsInstanceOfJsonStream()
