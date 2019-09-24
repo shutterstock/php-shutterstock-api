@@ -2,6 +2,8 @@
 
 namespace Shutterstock\Api;
 
+use GuzzleHttp\Promise\PromiseInterface;
+use Psr\Http\Message\ResponseInterface;
 use GuzzleHttp\Client as Guzzle;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
@@ -20,7 +22,7 @@ class ClientTest extends TestCase
         $client = $this->getClient();
 
         $this->assertInstanceOf(
-            'Shutterstock\Api\Client',
+            Client::class,
             $client
         );
     }
@@ -30,7 +32,7 @@ class ClientTest extends TestCase
         $client = $this->getClient();
 
         $this->assertAttributeInstanceOf(
-            'GuzzleHttp\Client',
+            Guzzle::class,
             'guzzle',
             $client
         );
@@ -71,7 +73,7 @@ class ClientTest extends TestCase
         $response = $client->get($uri, $query);
         $lastRequest = $mockHandler->getLastRequest();
 
-        $this->assertInstanceOf('Psr\Http\Message\ResponseInterface', $response);
+        $this->assertInstanceOf(ResponseInterface::class, $response);
         $this->assertEquals('GET', $lastRequest->getMethod());
         $this->assertEquals($expectedUri, (string) $lastRequest->getUri());
     }
@@ -88,7 +90,7 @@ class ClientTest extends TestCase
         $promise = $client->getAsync($uri, $query);
         $lastRequest = $mockHandler->getLastRequest();
 
-        $this->assertInstanceOf('GuzzleHttp\Promise\PromiseInterface', $promise);
+        $this->assertInstanceOf(PromiseInterface::class, $promise);
         $this->assertEquals('GET', $lastRequest->getMethod());
         $this->assertEquals($expectedUri, (string) $lastRequest->getUri());
     }
@@ -158,7 +160,7 @@ class ClientTest extends TestCase
         $response = $client->post($uri, $body);
         $lastRequest = $mockHandler->getLastRequest();
 
-        $this->assertInstanceOf('Psr\Http\Message\ResponseInterface', $response);
+        $this->assertInstanceOf(ResponseInterface::class, $response);
         $this->assertEquals('POST', $lastRequest->getMethod());
         $this->assertEquals($expectedUri, (string) $lastRequest->getUri());
         $this->assertEquals($expectedBody, (string) $lastRequest->getBody());
@@ -176,7 +178,7 @@ class ClientTest extends TestCase
         $promise = $client->postAsync($uri, $body);
         $lastRequest = $mockHandler->getLastRequest();
 
-        $this->assertInstanceOf('GuzzleHttp\Promise\PromiseInterface', $promise);
+        $this->assertInstanceOf(PromiseInterface::class, $promise);
         $this->assertEquals('POST', $lastRequest->getMethod());
         $this->assertEquals($expectedUri, (string) $lastRequest->getUri());
         $this->assertEquals($expectedBody, (string) $lastRequest->getBody());
